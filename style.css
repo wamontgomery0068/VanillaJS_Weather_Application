@@ -41,8 +41,20 @@ body {
 }
 
 .degree_section {
+
+    /* FlexBox Properties Below */
     display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.degree_section span {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.degree_section h2 {
+    font-size: 40px;
 }
