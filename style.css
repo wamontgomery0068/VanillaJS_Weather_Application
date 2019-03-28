@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+    /* FlexBox Properties Below */
+
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    
+    /* Background Properties Below */
+
+    background: #373B44;
+    background: -webkit-linear-gradient(to top, #4286f4, #373B44);
+    background: linear-gradient(to top, #4286f4, #373B44);
+
+    /* Text Properties Below */
+
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+
+.location, 
+.temperature {
+    height: 30vh;
+    width: 50%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temperature{
+    flex-direction: column;
+}
+
+.degree_section {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
