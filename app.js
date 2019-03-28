@@ -33,10 +33,12 @@ window.addEventListener('load', () => {
             fetch(api).then(response => {
                 return response.json();
             }).then(data => {
-                console.log(data);
+                // console.log(data);
                 const { temperature, summary } = data.currently;
                 // SET DOM Elements from the API
+                locationTimezone.textContent = data.timezone;
                 temperatureDegree.textContent = temperature;
+                temperatureDescription.textContent = summary;
 
             });
 
